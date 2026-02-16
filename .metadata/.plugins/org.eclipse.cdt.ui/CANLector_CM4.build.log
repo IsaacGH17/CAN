@@ -1,4 +1,4 @@
-15:24:22 **** Build of configuration Debug for project CANLector_CM4 ****
+23:49:56 **** Incremental Build of configuration Debug for project CANLector_CM4 ****
 make -j16 all 
 arm-none-eabi-gcc "C:/git/CAN/CANLector/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_NUCLEO_64 -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal.o"
 arm-none-eabi-gcc "C:/git/CAN/CANLector/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_NUCLEO_64 -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.d" -MT"Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32H7xx_HAL_Driver/stm32h7xx_hal_cortex.o"
@@ -36,11 +36,11 @@ Finished building target: CANLector_CM4.elf
 arm-none-eabi-size  CANLector_CM4.elf 
 arm-none-eabi-objdump -h -S CANLector_CM4.elf  > "CANLector_CM4.list"
    text	   data	    bss	    dec	    hex	filename
-   3148	     16	   1568	   4732	   127c	CANLector_CM4.elf
+   3148	     16	   5152	   8316	   207c	CANLector_CM4.elf
 Finished building: default.size.stdout
  
 Finished building: CANLector_CM4.list
  
 
-15:24:29 Build Finished. 0 errors, 0 warnings. (took 7s.24ms)
+23:50:01 Build Finished. 0 errors, 0 warnings. (took 5s.214ms)
 

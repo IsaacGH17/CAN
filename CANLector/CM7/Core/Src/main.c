@@ -23,6 +23,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "LCD_I2C.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,6 +51,8 @@
 
 COM_InitTypeDef BspCOMInit;
 
+I2C_HandleTypeDef hi2c1;
+
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
@@ -58,12 +63,81 @@ SPI_HandleTypeDef hspi1;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+FATFS SDFatFS;
+FIL file;
+char SDPath[4];
+void SD_Debug_Test(void) {
+	FRESULT res;
+	UINT bytesWritten;
+	char buffer[17];
+	LCD_CLEAR();
+	uint8_t cmd0[6] = {0x40,0x00,0x00,0x00,0x00,0x95};
+	uint8_t rx;
+	uint8_t dummy = 0xFF;
+
+	// 80 clocks con CS HIGH
+	HAL_GPIO_WritePin(SD_CS_GPIO_Port, SD_CS_Pin, GPIO_PIN_SET);
+	for(int i=0;i<10;i++)
+	{
+	    HAL_SPI_Transmit(&hspi1, &dummy, 1, 100);
+	}
+
+	// Seleccionar tarjeta
+	HAL_GPIO_WritePin(SD_CS_GPIO_Port, SD_CS_Pin, GPIO_PIN_RESET);
+
+	// Enviar CMD0
+	HAL_SPI_Transmit(&hspi1, cmd0, 6, 100);
+
+	// Leer respuesta (máx 10 intentos)
+	for(int i=0;i<10;i++)
+	{
+	    HAL_SPI_TransmitReceive(&hspi1, &dummy, &rx, 1, 100);
+	    if(rx != 0xFF) break;
+	}
+
+	HAL_GPIO_WritePin(SD_CS_GPIO_Port, SD_CS_Pin, GPIO_PIN_SET);
+
+	// Mostrar respuesta
+	LCD_CLEAR();
+	LCD_CURSOR(0,0);
+	sprintf(buffer, "CMD0:0x%02X", rx);
+	LCD_CADENA(buffer);
+	HAL_Delay(3000);
+	if(res != FR_OK)
+		return;
+	res = f_open(&file, "debug.txt", FA_CREATE_ALWAYS | FA_WRITE);
+	LCD_CLEAR();
+	LCD_CURSOR(0,0);
+	sprintf(buffer, "Open:%d", res);
+	LCD_CADENA(buffer);
+	HAL_Delay(2000);
+	if(res != FR_OK)
+		return;
+	char data[] = "H755 SPI OK\r\n";
+	res = f_write(&file, data, strlen(data), &bytesWritten);
+	LCD_CLEAR();
+	LCD_CURSOR(0,0);
+	sprintf(buffer, "Write:%d", res);
+	LCD_CADENA(buffer);
+	LCD_CURSOR(1,0);
+	sprintf(buffer, "Bytes:%d", bytesWritten);
+	LCD_CADENA(buffer);
+	HAL_Delay(2000);
+	f_sync(&file);
+	res = f_close(&file);
+	LCD_CLEAR(); LCD_CURSOR(0,0);
+	sprintf(buffer, "Close:%d", res);
+	LCD_CADENA(buffer);
+	HAL_Delay(2000);
+}
 
 /* USER CODE END 0 */
 
@@ -124,14 +198,33 @@ Error_Handler();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_FATFS_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+  LCD_init();
   	  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+  	LCD_CLEAR();
+  	LCD_CADENA("Hola amigo");
+  	HAL_Delay(1000);
+  	SD_Debug_Test();
   /* USER CODE END 2 */
+
+  /* Initialize USER push-button, will be used to trigger an interrupt each time it's pressed.*/
+  BSP_PB_Init(BUTTON_USER, BUTTON_MODE_EXTI);
+
+  /* Initialize COM1 port (115200, 8 bits (7-bit data + 1 stop bit), no parity */
+  BspCOMInit.BaudRate   = 115200;
+  BspCOMInit.WordLength = COM_WORDLENGTH_8B;
+  BspCOMInit.StopBits   = COM_STOPBITS_1;
+  BspCOMInit.Parity     = COM_PARITY_NONE;
+  BspCOMInit.HwFlowCtl  = COM_HWCONTROL_NONE;
+  if (BSP_COM_Init(COM1, &BspCOMInit) != BSP_ERROR_NONE)
+  {
+    Error_Handler();
+  }
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -196,7 +289,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV1;
   RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV1;
 
@@ -204,6 +297,54 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x00707CBB;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -229,7 +370,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -289,8 +430,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA1 PA2 PA7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_7;
+  /*Configure GPIO pins : PA1 PA2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

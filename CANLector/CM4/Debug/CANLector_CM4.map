@@ -5081,8 +5081,8 @@ END GROUP
 LOAD D:/Documentos/Electronica/Nueva carpeta/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
 LOAD D:/Documentos/Electronica/Nueva carpeta/STM32CubeIDE_1.15.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
                 0x10048000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
-                0x00000200                        _Min_Heap_Size = 0x200
-                0x00000400                        _Min_Stack_Size = 0x400
+                0x00000400                        _Min_Heap_Size = 0x400
+                0x00001000                        _Min_Stack_Size = 0x1000
 
 .isr_vector     0x08100000      0x298
                 0x08100000                        . = ALIGN (0x4)
@@ -5440,15 +5440,15 @@ LOAD D:/Documentos/Electronica/Nueva carpeta/STM32CubeIDE_1.15.0/STM32CubeIDE/pl
                 0x10000030                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x10000030      0x600 load address 0x08100c5c
+                0x10000030     0x1400 load address 0x08100c5c
                 0x10000030                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x10000030                        PROVIDE (_end = .)
-                0x10000230                        . = (. + _Min_Heap_Size)
- *fill*         0x10000030      0x200 
-                0x10000630                        . = (. + _Min_Stack_Size)
- *fill*         0x10000230      0x400 
-                0x10000630                        . = ALIGN (0x8)
+                0x10000430                        . = (. + _Min_Heap_Size)
+ *fill*         0x10000030      0x400 
+                0x10001430                        . = (. + _Min_Stack_Size)
+ *fill*         0x10000430     0x1000 
+                0x10001430                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
