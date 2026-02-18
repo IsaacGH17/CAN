@@ -1,0 +1,426 @@
+2026-02-17 00:02:56,968 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:02:57,033 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,033 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,033 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,033 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,033 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,051 [INFO] Can:71 - Can Add PropertyChangeListener com.st.microxplorer.plugins.ip.can.Can@50ef13a4
+2026-02-17 00:02:57,059 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,060 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,060 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,060 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:02:57,060 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:25,076 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.lang.ClassCastException: class sun.awt.windows.WEmbeddedFrame cannot be cast to class javax.swing.JFrame (sun.awt.windows.WEmbeddedFrame and javax.swing.JFrame are in module java.desktop of loader 'bootstrap')
+2026-02-17 00:06:25,078 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.clock.ClockConfigurationView.activatePlugin(ClockConfigurationView.java:425)
+2026-02-17 00:06:25,079 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.microxplorer.maingui.MainPanel$1.stateChanged(MainPanel.java:369)
+2026-02-17 00:06:25,080 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.fireStateChanged(JTabbedPane.java:444)
+2026-02-17 00:06:25,081 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane$ModelListener.stateChanged(JTabbedPane.java:295)
+2026-02-17 00:06:25,082 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.fireStateChanged(DefaultSingleSelectionModel.java:148)
+2026-02-17 00:06:25,084 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.DefaultSingleSelectionModel.setSelectedIndex(DefaultSingleSelectionModel.java:79)
+2026-02-17 00:06:25,085 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndexImpl(JTabbedPane.java:648)
+2026-02-17 00:06:25,086 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JTabbedPane.setSelectedIndex(JTabbedPane.java:623)
+2026-02-17 00:06:25,087 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTabbedPaneUI$Handler.mousePressed(BasicTabbedPaneUI.java:4101)
+2026-02-17 00:06:25,088 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6623)
+2026-02-17 00:06:25,089 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3389)
+2026-02-17 00:06:25,090 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6391)
+2026-02-17 00:06:25,090 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+2026-02-17 00:06:25,091 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+2026-02-17 00:06:25,092 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+2026-02-17 00:06:25,093 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+2026-02-17 00:06:25,093 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+2026-02-17 00:06:25,094 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4572)
+2026-02-17 00:06:25,095 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+2026-02-17 00:06:25,096 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+2026-02-17 00:06:25,096 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+2026-02-17 00:06:25,097 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+2026-02-17 00:06:25,098 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+2026-02-17 00:06:25,098 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+2026-02-17 00:06:25,099 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2026-02-17 00:06:25,101 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+2026-02-17 00:06:25,102 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+2026-02-17 00:06:25,103 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+2026-02-17 00:06:25,103 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2026-02-17 00:06:25,104 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+2026-02-17 00:06:25,105 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+2026-02-17 00:06:25,106 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+2026-02-17 00:06:25,107 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2026-02-17 00:06:25,107 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2026-02-17 00:06:25,108 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2026-02-17 00:06:25,109 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2026-02-17 00:06:25,110 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2026-02-17 00:06:25,111 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2026-02-17 00:06:35,992 [INFO] I2cTimingTraitement:330 - 0x00707CBB
+2026-02-17 00:06:36,082 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,082 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,082 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,082 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,082 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,181 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:06:36,264 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,264 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,264 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,264 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:06:36,264 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:19,660 [INFO] I2cTimingTraitement:330 - 0x007074AF
+2026-02-17 00:07:22,083 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:07:22,144 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,144 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,144 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,144 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,144 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,298 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,298 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,298 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,298 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:22,298 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,573 [INFO] I2cTimingTraitement:330 - 0x00909FCE
+2026-02-17 00:07:29,757 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:07:29,797 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,798 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,798 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,798 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,798 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,902 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,902 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,902 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,902 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:29,902 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:45,949 [INFO] I2cTimingTraitement:330 - 0x00C0EAFF
+2026-02-17 00:07:45,951 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:07:46,087 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,087 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,087 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,087 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,087 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,536 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,536 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,536 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,536 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:07:46,536 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,767 [INFO] I2cTimingTraitement:330 - 0x00C0EAFF
+2026-02-17 00:08:03,769 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:08:03,818 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,818 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,818 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,818 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,818 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,976 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,976 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,976 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,976 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:08:03,976 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:22,809 [INFO] I2cTimingTraitement:330 - 0x00C0EAFF
+2026-02-17 00:09:22,810 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:09:22,855 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:22,856 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:22,856 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:22,856 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:22,856 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:23,021 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:23,021 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:23,021 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:23,021 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:23,021 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,081 [INFO] I2cTimingTraitement:330 - 0x00909FCE
+2026-02-17 00:09:48,336 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:09:48,385 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,385 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,385 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,385 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,385 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,534 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,534 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,534 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,534 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:09:48,534 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,250 [INFO] I2cTimingTraitement:330 - 0x10909CEC
+2026-02-17 00:12:38,468 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:12:38,515 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,515 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,515 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,515 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,515 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,670 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,670 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,670 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,670 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:12:38,670 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:14:37,142 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 884404944 Bytes (1073741824)
+2026-02-17 00:14:38,134 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2026-02-17 00:14:42,308 [INFO] I2cTimingTraitement:330 - 0x10909CEC
+2026-02-17 00:14:42,310 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Nominal 
+2026-02-17 00:16:09,574 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,574 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,574 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,574 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,574 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,615 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,615 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,615 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,615 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,615 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:16:09,643 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-02-17 00:20:39,202 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-02-17 00:24:45,291 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 862743776 Bytes (1073741824)
+2026-02-17 00:24:46,553 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2026-02-17 00:24:47,337 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 887420696 Bytes (1073741824)
+2026-02-17 00:24:48,001 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2026-02-17 00:24:50,466 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 934046944 Bytes (1073741824)
+2026-02-17 00:24:50,638 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2026-02-17 00:24:51,299 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FDCAN
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FATFS
+2026-02-17 00:24:51,300 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC2
+2026-02-17 00:24:51,301 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-02-17 00:24:51,301 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS_M4
+2026-02-17 00:24:51,301 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NUCLEO-H755ZI-Q
+2026-02-17 00:24:51,301 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC1
+2026-02-17 00:24:51,303 [INFO] CodeGenerator:807 - code generatio: config db path: D:\Documentos\Electronica\Nueva carpeta\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2026-02-17 00:24:51,342 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:24:51,342 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:24:51,342 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:24:51,342 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:24:51,343 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:24:51,433 [INFO] CodeGenerator:1511 - *******************Project context M7 selected
+2026-02-17 00:24:51,859 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:24:52,348 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:24:52,584 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp_save
+2026-02-17 00:24:52,956 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp
+2026-02-17 00:24:53,594 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC1 ip!!
+2026-02-17 00:24:53,880 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:24:54,003 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp
+2026-02-17 00:24:54,033 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2026-02-17 00:24:54,060 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_HalInit.tmp_save
+2026-02-17 00:24:54,145 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_HalInit.tmp
+2026-02-17 00:24:54,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_vars.tmp_save
+2026-02-17 00:24:54,263 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_vars.tmp
+2026-02-17 00:24:54,279 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_ext_vars.tmp_save
+2026-02-17 00:24:54,348 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_ext_vars.tmp
+2026-02-17 00:24:54,376 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_inc.tmp_save
+2026-02-17 00:24:54,445 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\fatfs_inc.tmp
+2026-02-17 00:24:54,489 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\FATFS\Target\ffconf.h_save
+2026-02-17 00:24:54,635 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\FATFS\Target\ffconf.h
+2026-02-17 00:24:54,682 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\FATFS\Target\user_diskio.c_save
+2026-02-17 00:24:54,782 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\FATFS\Target\user_diskio.c
+2026-02-17 00:24:54,808 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\FATFS\Target\user_diskio.h_save
+2026-02-17 00:24:54,898 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\FATFS\Target\user_diskio.h
+2026-02-17 00:24:54,926 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\FATFS\App\fatfs.c_save
+2026-02-17 00:24:55,019 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\FATFS\App\fatfs.c
+2026-02-17 00:24:55,048 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\FATFS\App\fatfs.h_save
+2026-02-17 00:24:55,141 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\FATFS\App\fatfs.h
+2026-02-17 00:24:55,236 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_nucleo_conf.h_save
+2026-02-17 00:24:55,317 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_nucleo_conf.h
+2026-02-17 00:24:55,333 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_inc.tmp_save
+2026-02-17 00:24:55,404 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_inc.tmp
+2026-02-17 00:24:55,420 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_vars.tmp_save
+2026-02-17 00:24:55,497 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_vars.tmp
+2026-02-17 00:24:55,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_init.tmp_save
+2026-02-17 00:24:55,586 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_init.tmp
+2026-02-17 00:24:55,604 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_before_while.tmp_save
+2026-02-17 00:24:55,661 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_before_while.tmp
+2026-02-17 00:24:55,677 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_inside_while.tmp_save
+2026-02-17 00:24:55,744 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_inside_while.tmp
+2026-02-17 00:24:55,761 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_fct.tmp_save
+2026-02-17 00:24:55,827 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\bsp_common_demo_fct.tmp
+2026-02-17 00:24:55,899 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:24:56,045 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c
+2026-02-17 00:24:56,106 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:24:56,207 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:24:56,482 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:24:56,694 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:24:56,751 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp_save
+2026-02-17 00:24:56,823 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp
+2026-02-17 00:24:56,867 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:24:56,977 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:24:57,041 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:24:57,043 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:24:57,078 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\main.h_save
+2026-02-17 00:24:57,206 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\main.h
+2026-02-17 00:24:57,262 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\main.c_save
+2026-02-17 00:24:57,436 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\main.c
+2026-02-17 00:24:57,486 [INFO] CodeGenerator:1511 - *******************Project context M4 selected
+2026-02-17 00:24:57,536 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:24:57,603 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:24:57,675 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC2 ip!!
+2026-02-17 00:24:57,695 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:24:57,764 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp
+2026-02-17 00:24:57,780 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_nucleo_conf.h_save
+2026-02-17 00:24:57,848 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_nucleo_conf.h
+2026-02-17 00:24:57,856 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\bsp_inc.tmp_save
+2026-02-17 00:24:57,907 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\bsp_inc.tmp
+2026-02-17 00:24:57,941 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:24:58,039 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c
+2026-02-17 00:24:58,049 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:24:58,133 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:24:58,175 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:24:58,284 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:24:58,291 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp_save
+2026-02-17 00:24:58,347 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp
+2026-02-17 00:24:58,380 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:24:58,498 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:24:58,527 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:24:58,529 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:24:58,556 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\main.h_save
+2026-02-17 00:24:58,674 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\main.h
+2026-02-17 00:24:58,695 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\main.c_save
+2026-02-17 00:24:58,816 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\main.c
+2026-02-17 00:24:59,635 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 620mS.
+2026-02-17 00:24:59,677 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2026-02-17 00:24:59,795 [INFO] ConfigFileManager:1503 - The Die is : DIE450
+2026-02-17 00:25:01,353 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-02-17 00:25:13,835 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 14157mS.
+2026-02-17 00:25:13,838 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 3mS.
+2026-02-17 00:25:13,845 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2026-02-17 00:30:55,609 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-02-17 00:31:07,500 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 941225424 Bytes (1073741824)
+2026-02-17 00:31:08,890 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 965314920 Bytes (1073741824)
+2026-02-17 00:31:11,322 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 881944192 Bytes (1073741824)
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FDCAN
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC2
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS_M4
+2026-02-17 00:31:11,487 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC1
+2026-02-17 00:31:11,489 [INFO] CodeGenerator:807 - code generatio: config db path: D:\Documentos\Electronica\Nueva carpeta\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2026-02-17 00:31:11,493 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:31:11,493 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:31:11,493 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:31:11,493 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:31:11,493 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:31:11,538 [INFO] CodeGenerator:1511 - *******************Project context M7 selected
+2026-02-17 00:31:11,603 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:31:11,708 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:31:11,791 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp_save
+2026-02-17 00:31:11,913 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp
+2026-02-17 00:31:12,085 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC1 ip!!
+2026-02-17 00:31:12,273 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:31:12,364 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp
+2026-02-17 00:31:12,422 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:31:12,628 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c
+2026-02-17 00:31:12,640 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:31:12,720 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:31:12,843 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:31:12,967 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:31:12,975 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp_save
+2026-02-17 00:31:13,027 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp
+2026-02-17 00:31:13,052 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:31:13,147 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:31:13,187 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:31:13,188 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:31:13,209 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\main.h_save
+2026-02-17 00:31:13,310 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\main.h
+2026-02-17 00:31:13,337 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\main.c_save
+2026-02-17 00:31:13,476 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\main.c
+2026-02-17 00:31:13,530 [INFO] CodeGenerator:1511 - *******************Project context M4 selected
+2026-02-17 00:31:13,589 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:31:13,660 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:31:13,669 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC2 ip!!
+2026-02-17 00:31:13,685 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:31:13,783 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp
+2026-02-17 00:31:13,818 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:31:13,885 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c
+2026-02-17 00:31:13,894 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:31:13,953 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:31:13,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:31:14,073 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:31:14,080 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp_save
+2026-02-17 00:31:14,131 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp
+2026-02-17 00:31:14,156 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:31:14,250 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:31:14,281 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:31:14,281 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:31:14,303 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\main.h_save
+2026-02-17 00:31:14,396 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\main.h
+2026-02-17 00:31:14,417 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\main.c_save
+2026-02-17 00:31:14,517 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\main.c
+2026-02-17 00:31:15,168 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 463mS.
+2026-02-17 00:31:15,190 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2026-02-17 00:31:15,251 [INFO] ConfigFileManager:1503 - The Die is : DIE450
+2026-02-17 00:31:23,431 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 8241mS.
+2026-02-17 00:31:23,432 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2026-02-17 00:31:23,435 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2026-02-17 00:35:16,290 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 938557104 Bytes (1073741824)
+2026-02-17 00:35:17,406 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 900494480 Bytes (1073741824)
+2026-02-17 00:35:17,985 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 873850736 Bytes (1073741824)
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FDCAN
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC2
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS_M4
+2026-02-17 00:35:18,151 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC1
+2026-02-17 00:35:18,153 [INFO] CodeGenerator:807 - code generatio: config db path: D:\Documentos\Electronica\Nueva carpeta\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2026-02-17 00:35:18,157 [WARN] IP:2120 - ClockDivider not found: check if there is a RefParameter without a condition.
+2026-02-17 00:35:18,157 [WARN] IP:2120 - ClockDividerCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:35:18,157 [WARN] IP:2120 - MinOscClkPeriodsCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:35:18,157 [WARN] IP:2120 - TimeQuantaPerBitTimeCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:35:18,157 [WARN] IP:2120 - WatchdogStartValueCCU not found: check if there is a RefParameter without a condition.
+2026-02-17 00:35:18,196 [INFO] CodeGenerator:1511 - *******************Project context M7 selected
+2026-02-17 00:35:18,246 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:35:18,324 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:35:18,386 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp_save
+2026-02-17 00:35:18,510 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\gpio.tmp
+2026-02-17 00:35:18,662 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC1 ip!!
+2026-02-17 00:35:18,745 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:35:18,826 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\cortex.tmp
+2026-02-17 00:35:18,871 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:35:19,000 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_it.c
+2026-02-17 00:35:19,009 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:35:19,072 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:35:19,215 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:35:19,395 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:35:19,407 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp_save
+2026-02-17 00:35:19,487 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\MXTmpFiles\system.tmp
+2026-02-17 00:35:19,537 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:35:19,662 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:35:19,717 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:35:19,717 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:35:19,748 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Inc\main.h_save
+2026-02-17 00:35:19,839 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Inc\main.h
+2026-02-17 00:35:19,865 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM7\Core\Src\main.c_save
+2026-02-17 00:35:20,021 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM7\Core\Src\main.c
+2026-02-17 00:35:20,080 [INFO] CodeGenerator:1511 - *******************Project context M4 selected
+2026-02-17 00:35:20,141 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\MXTmpFiles\license.tmp_save
+2026-02-17 00:35:20,221 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\MXTmpFiles\license.tmp
+2026-02-17 00:35:20,230 [WARN] IPConfigManager:98 - WARNING: Missing Config File for NVIC2 ip!!
+2026-02-17 00:35:20,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp_save
+2026-02-17 00:35:20,343 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\cortex.tmp
+2026-02-17 00:35:20,387 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c_save
+2026-02-17 00:35:20,482 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_it.c
+2026-02-17 00:35:20,495 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h_save
+2026-02-17 00:35:20,584 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_it.h
+2026-02-17 00:35:20,638 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c_save
+2026-02-17 00:35:20,717 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\stm32h7xx_hal_msp.c
+2026-02-17 00:35:20,724 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp_save
+2026-02-17 00:35:20,779 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\MXTmpFiles\system.tmp
+2026-02-17 00:35:20,807 [INFO] CodeEngine:311 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h_save
+2026-02-17 00:35:20,912 [INFO] CodeEngine:335 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\stm32h7xx_hal_conf.h
+2026-02-17 00:35:20,936 [WARN] IPConfigManager:3513 - IP not found : NVIC
+2026-02-17 00:35:20,937 [WARN] CodeGenerator:3951 - IP not found : null
+2026-02-17 00:35:20,964 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Inc\main.h_save
+2026-02-17 00:35:21,035 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Inc\main.h
+2026-02-17 00:35:21,056 [INFO] CodeEngine:255 - oldGeneratedFile, C:\git\CAN\CANLector\CM4\Core\Src\main.c_save
+2026-02-17 00:35:21,142 [INFO] CodeEngine:279 - Generated code: C:\git\CAN\CANLector\CM4\Core\Src\main.c
+2026-02-17 00:35:21,865 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 511mS.
+2026-02-17 00:35:21,887 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2026-02-17 00:35:21,951 [INFO] ConfigFileManager:1503 - The Die is : DIE450
+2026-02-17 00:35:28,940 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 7053mS.
+2026-02-17 00:35:28,941 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2026-02-17 00:35:28,944 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2026-02-17 00:39:03,931 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-02-17 03:56:14,450 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2026-02-17 03:56:14,451 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2026-02-17 03:56:14,452 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2026-02-17 03:56:15,221 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2026-02-17 21:06:47,509 [INFO] Activator:176 - 
+
+
+2026-02-17 21:06:47,519 [INFO] Activator:177 - !SESSION log4j initialized
+2026-02-17 21:07:25,623 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 

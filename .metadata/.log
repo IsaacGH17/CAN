@@ -676,3 +676,18 @@ C Model Exception: C Model Status [Element main.c does not exist.]
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-16 23:56:29.676
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-02-17 21:05:35.510 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-17 21:06:44.549
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-17 21:06:44.562
+!MESSAGE Log4j2 initialized with config file C:\git\CAN\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-17 21:07:31.663
+!MESSAGE Started RMI Server, listening on port 41337

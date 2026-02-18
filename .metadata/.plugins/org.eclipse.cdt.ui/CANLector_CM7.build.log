@@ -1,24 +1,10 @@
-23:52:32 **** Incremental Build of configuration Debug for project CANLector_CM7 ****
+23:49:17 **** Incremental Build of configuration Debug for project CANLector_CM7 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DCORE_CM7 -DUSE_HAL_DRIVER -DSTM32H755xx -DUSE_NUCLEO_64 -c -I../Core/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../../Drivers/BSP/STM32H7xx_Nucleo -I../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'SD_Debug_Test':
-../Core/Src/main.c:114:11: warning: 'res' is used uninitialized [-Wuninitialized]
-  114 |         if(res != FR_OK)
-      |           ^
-../Core/Src/main.c:78:17: note: 'res' was declared here
-   78 |         FRESULT res;
-      |                 ^~~
-arm-none-eabi-gcc -o "CANLector_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\git\CAN\CANLector\CM7\STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CANLector_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: CANLector_CM7.elf
- 
 arm-none-eabi-size  CANLector_CM7.elf 
-arm-none-eabi-objdump -h -S CANLector_CM7.elf  > "CANLector_CM7.list"
    text	   data	    bss	    dec	    hex	filename
-  43852	    136	  17776	  61764	   f144	CANLector_CM7.elf
+  24920	     96	  16992	  42008	   a418	CANLector_CM7.elf
 Finished building: default.size.stdout
  
-Finished building: CANLector_CM7.list
- 
 
-23:52:34 Build Finished. 0 errors, 1 warnings. (took 1s.956ms)
+23:49:18 Build Finished. 0 errors, 0 warnings. (took 590ms)
 
