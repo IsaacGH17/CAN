@@ -1,10 +1,13 @@
-23:49:17 **** Incremental Build of configuration Debug for project CANLector_CM7 ****
+18:40:00 **** Incremental Build of configuration Debug for project CANLector_CM7 ****
 make -j16 all 
+arm-none-eabi-gcc -o "CANLector_CM7.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\git\CAN\CANLector\CM7\STM32H755ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CANLector_CM7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CANLector_CM7.elf
+ 
 arm-none-eabi-size  CANLector_CM7.elf 
    text	   data	    bss	    dec	    hex	filename
-  24920	     96	  16992	  42008	   a418	CANLector_CM7.elf
+  25480	     96	  17000	  42576	   a650	CANLector_CM7.elf
 Finished building: default.size.stdout
  
 
-23:49:18 Build Finished. 0 errors, 0 warnings. (took 590ms)
+18:40:01 Build Finished. 0 errors, 0 warnings. (took 1s.281ms)
 
